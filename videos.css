@@ -94,10 +94,13 @@ main > a {
     opacity: 0.8;
     box-shadow: 0px 2px 4px 1px gray;
     text-shadow: 1px 1px 2px white;
+    filter: saturate(60%);
+    transition: 1s;
 }
 
 main > a:hover {
     opacity: 1;
+    transition: 1s;
 }
 
 h2:hover {
@@ -123,12 +126,19 @@ h2:hover {
     background-position: center;
 }
 
+.film-corpo, .film-story, .film-tuto, .film-formation, .film-interview {
+    opacity: 1;
+    filter: saturate(4);
+    transition: 1s;
+}
+
 footer {
     display: flex;
     color: #ffffff;
     align-items: center;
     justify-content: space-between;
     background-color: black;
+    margin: auto;
     height: 80px;
     width: 100%;
 }
@@ -156,4 +166,265 @@ footer > p {
     cursor: pointer;
     scale: 1.1;
     transition: 1s;
+}
+
+@media (min-width:1200px) and (max-width: 1600px) {
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        height: 110px;
+        background-color: black;
+        z-index: 10;
+    }
+    
+    #logo {
+        height: 110px;
+    }
+
+    .navlink {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
+        gap: 15%;
+        align-items: center;
+        width: 80%;
+    }
+
+    main {
+        display: grid;
+        text-align: center;
+        margin: 5px;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 15px;
+    }
+    
+    main > a {
+        background: linear-gradient(90deg, rgb(250, 246, 246), rgb(255, 255, 255), rgb(250, 246, 246));
+        color: black;
+        border-radius: 5px;
+        height: 150px;
+        width: 90%;
+        padding: 5px;
+        justify-self: center;
+        opacity: 0.8;
+        box-shadow: 0px 2px 4px 1px gray;
+        text-shadow: 1px 1px 2px white;
+        filter: saturate(60%);
+        transition: 1s;
+    }
+
+}
+
+@media (min-width:1000px) and (max-width: 1200px) {
+
+    main {
+        display: grid;
+        text-align: center;
+        margin: 5px;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 15px;
+    }
+    
+    main > a {
+        background: linear-gradient(90deg, rgb(250, 246, 246), rgb(255, 255, 255), rgb(250, 246, 246));
+        color: black;
+        border-radius: 5px;
+        height: 150px;
+        width: 90%;
+        padding: 5px;
+        justify-self: center;
+        opacity: 0.8;
+        box-shadow: 0px 2px 4px 1px gray;
+        text-shadow: 1px 1px 2px white;
+        filter: saturate(60%);
+        transition: 1s;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+    
+    h3 {
+        font-size: 25px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        height: 110px;
+        background-color: black;
+        z-index: 10;
+    }
+    
+    #logo {
+        height: 110px;
+    }
+    
+    .navlink {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
+        gap: 5%;
+        align-items: center;
+        width: 80%;
+    }
+    
+    .navlink, a {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: sticky;
+        height: 300px;
+        background-color: black;
+        z-index: 10;
+    }
+
+    main {
+        display: grid;
+        text-align: center;
+        margin: 5px;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 15px;
+    }
+    
+    main > a {
+        background: linear-gradient(90deg, rgb(250, 246, 246), rgb(255, 255, 255), rgb(250, 246, 246));
+        color: black;
+        border-radius: 5px;
+        height: 150px;
+        width: 90%;
+        padding: 5px;
+        justify-self: center;
+        opacity: 0.8;
+        box-shadow: 0px 2px 4px 1px gray;
+        text-shadow: 1px 1px 2px white;
+        filter: saturate(60%);
+        transition: 1s;
+    }
+    
+    #logo {
+        height: 80px;
+    }
+    
+    .navlink {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5%;
+        gap: 5%;
+        align-items: center;
+        width: 5%;
+    }
+    
+    .navlink, a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-left: 10%;
+        font-size: 30px;
+        gap: 20px;
+    }
+    
+    .nav {
+        height: 8vh;
+        overflow: hidden;
+        transition: height 0.2s ease;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+
+    footer {
+        display: flex;
+        color: #ffffff;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        height: 100px;
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+    
+    .foot {
+        height: 20px;
+        margin-left: 1%;
+    }
+    
+    .footlink {
+        display: flex;
+        gap: 2%;
+        margin-right: 10%;
+    }
+    
+    .foot-photo {
+        height: 30px;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 600px) {
+
+    main {
+        display: grid;
+        text-align: center;
+        margin: 5px;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 15px;
+    }
+    
+    main > a {
+        background: linear-gradient(90deg, rgb(250, 246, 246), rgb(255, 255, 255), rgb(250, 246, 246));
+        color: black;
+        border-radius: 5px;
+        height: 150px;
+        width: 90%;
+        padding: 5px;
+        justify-self: center;
+        opacity: 0.8;
+        box-shadow: 0px 2px 4px 1px gray;
+        text-shadow: 1px 1px 2px white;
+        filter: saturate(60%);
+        transition: 1s;
+    }
 }

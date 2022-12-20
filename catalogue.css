@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+    --blue-color: #48f0f6;
+    --violet-color: #966fe4;
+    font-family: 'Russo One', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    height: 120px;
+    background-color: black;
+    z-index: 10;
+}
+
+#logo {
+    height: 120px;
+}
+
+.navlink {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15%;
+    gap: 180px;
+    align-items: center;
+    width: 80%;
+}
+
+.navlink, a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navlink > a:hover {
+    scale: 1.1;
+    transition: 1s;
+    background-image: linear-gradient(45deg, #48f0f6, #966fe4);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.icon {
+    margin-top: 100px;
+    height: 80px;
+    filter: saturate(80%);
+    transition: 1s;
+}
+
+.icon:hover {
+    scale: 1.2;
+    transition: 1s;
+    filter: saturate(2);
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 80px;
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+main {
+    text-align: center;
+}
+
+section {
+    display: grid;
+        text-align: center;
+        margin: 100px 10% 5% 10%;
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat auto;
+        grid-column-gap: 5%;
+        grid-row-gap: 50px;
+}
+
+div {
+    /* border: #48f0f6 solid 1px; */
+}
+
+iframe {
+    border: black solid 1px;
+    box-shadow: 0px 2px 10px 1px gray;
+}
+
+footer {
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    margin: auto;
+    height: 80px;
+    width: 100%;
+}
+
+footer > p {
+    padding: 0;
+}
+
+.foot {
+    height: 40px;
+}
+
+.footlink {
+    display: flex;
+    gap: 20px;
+    margin-right: 5%;
+}
+
+.foot-photo {
+    height: 40px;
+    transition: 1s;
+}
+
+.foot-photo:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 1s;
+}

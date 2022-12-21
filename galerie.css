@@ -11,8 +11,9 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
-/***************************NAV**********************/
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -21,9 +22,11 @@ nav {
     background-color: black;
     z-index: 10;
 }
+
 #logo {
     height: 120px;
 }
+
 .navlink {
     display: flex;
     justify-content: flex-end;
@@ -32,33 +35,57 @@ nav {
     align-items: center;
     width: 80%;
 }
+
 .navlink, a {
     color: white;
     text-decoration: none;
     font-size: 30px;
 }
+
 .navlink > a:hover {
     scale: 1.1;
     transition: 1s;
     background-image: linear-gradient(45deg, #48f0f6, #966fe4);
+    background-size: 100%;
+    background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }
-.icon {
-    margin-top: 100px;
-    height: 80px;
-    filter: saturate(80%);
+
+main {
+    display: grid;
+    text-align: center;
+    margin: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 15px;
+}
+
+main > a {
+    background: linear-gradient(90deg, rgb(250, 246, 246), rgb(255, 255, 255), rgb(250, 246, 246));
+    color: black;
+    border-radius: 5px;
+    height: 600px;
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+    justify-self: center;
+    box-shadow: 0px 2px 4px 1px gray;
+    text-shadow: 1px 1px 2px white;
     transition: 1s;
 }
-.icon:hover {
-    scale: 1.2;
-    transition: 1s;
-    filter: saturate(2);
-    cursor: pointer;
+
+main img {
+    height: 600px;
+    width: auto;
 }
-/**********************FOOTER*******************/
+
 footer {
     display: flex;
     color: #ffffff;
@@ -68,87 +95,31 @@ footer {
     margin: auto;
     height: 80px;
     width: 100%;
-    padding: 10px 0px;
 }
+
 footer > p {
     padding: 0;
 }
+
 .foot {
     height: 40px;
 }
+
 .footlink {
     display: flex;
     gap: 20px;
     margin-right: 5%;
 }
+
 .foot-photo {
     height: 40px;
     transition: 1s;
 }
+
 .foot-photo:hover {
     cursor: pointer;
     scale: 1.1;
     transition: 1s;
-}
-/**********************MAIN**********************/
-h1{
-    text-align: center;
-    font-size: 50px;
-}
-.desc{
-    font-size: 50px;
-}
-main{
-    display: grid;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    
-}
-main > a {
-    background: linear-gradient(90deg, rgb(250, 246, 246), rgb(255, 255, 255), rgb(250, 246, 246));
-    color: black;
-    border-radius: 5px;
-    height: 300px;
-    width: 90%;
-    margin: auto;
-    padding: 5px;
-    justify-self: center;
-    box-shadow: 0px 2px 4px 1px gray;
-    text-shadow: 1px 1px 2px white;
-    transition: 1s;  
-    opacity: 0.8;
-    filter: saturate(60%);
-}
-main >a:hover{
-    opacity: 1;
-    filter: saturate(100%);
-    transition: 1s;
-}
-
-.p1, .p2, .p3, .p4{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: filter, scale 1s ease-in-out;
-}
-.p1{
-    background-image: url(galerie/3.png);
-}
-.p2{
-    background-image: url(galerie/5.png);
-}
-.p3{
-    background-image: url(galerie/6.png);
-}
-.p4{
-    background-image: url(galerie/12.png);
 }
 
 @media (min-width:1200px) and (max-width: 1600px) {
@@ -175,36 +146,74 @@ main >a:hover{
         width: 80%;
     }
 
-    main{
+    main {
         display: grid;
         text-align: center;
-        margin-top: 50px;
+        margin: auto;
         margin-left: 2%;
         margin-right: 2%;
-        padding: 20px;
+        padding: 10px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 1%;
+        grid-row-gap: 15px;
     }
+    
     main > a {
         background: linear-gradient(90deg, rgb(250, 246, 246), rgb(255, 255, 255), rgb(250, 246, 246));
         color: black;
         border-radius: 5px;
-        height: 300px;
-        width: 90%;
+        height: 350px;
+        width: 80%;
         padding: 5px;
+        margin: auto;
         justify-self: center;
         box-shadow: 0px 2px 4px 1px gray;
         text-shadow: 1px 1px 2px white;
-        transition: 1s;  
-        opacity: 0.8;
-        filter: saturate(60%);
+        transition: 1s;
+    }
+    
+    main img {
+        height: 350px;
+        width: auto;
     }
 }
 
+
 @media (min-width:1000px) and (max-width: 1200px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 1%;
+        grid-row-gap: 15px;
+    }
+    
+    main > a {
+        background: linear-gradient(90deg, rgb(250, 246, 246), rgb(255, 255, 255), rgb(250, 246, 246));
+        color: black;
+        border-radius: 5px;
+        height: 450px;
+        width: 80%;
+        padding: 5px;
+        margin: auto;
+        justify-self: center;
+        box-shadow: 0px 2px 4px 1px gray;
+        text-shadow: 1px 1px 2px white;
+        transition: 1s;
+    }
+    
+    main img {
+        height: 450px;
+        width: auto;
+    }
 
     h2 {
         font-size: 25px;
@@ -244,6 +253,39 @@ main >a:hover{
 }
 
 @media (max-width: 1000px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 1%;
+        grid-row-gap: 15px;
+    }
+    
+    main > a {
+        background: linear-gradient(90deg, rgb(250, 246, 246), rgb(255, 255, 255), rgb(250, 246, 246));
+        color: black;
+        border-radius: 5px;
+        height: 350px;
+        width: 80%;
+        padding: 5px;
+        margin: auto;
+        justify-self: center;
+        box-shadow: 0px 2px 4px 1px gray;
+        text-shadow: 1px 1px 2px white;
+        transition: 1s;
+    }
+    
+    main img {
+        height: 350px;
+        width: auto;
+    }
     
     nav {
         display: flex;
@@ -287,39 +329,6 @@ main >a:hover{
         font-size: 20px;
     }
 
-    .desc{
-        font-size: 40px;
-    }
-
-    main{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 50px;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        
-    }
-    main > a {
-        background: linear-gradient(90deg, rgb(250, 246, 246), rgb(255, 255, 255), rgb(250, 246, 246));
-        color: black;
-        border-radius: 5px;
-        height: 300px;
-        width: 90%;
-        padding: 5px;
-        justify-self: center;
-        box-shadow: 0px 2px 4px 1px gray;
-        text-shadow: 1px 1px 2px white;
-        transition: 1s;  
-        opacity: 0.8;
-        filter: saturate(60%);
-    }
-
     footer {
         display: flex;
         color: #ffffff;
@@ -348,5 +357,41 @@ main >a:hover{
     .foot-photo {
         height: 40px;
         transition: 1s;
+    }
+}
+
+@media (max-width: 600px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 1%;
+        grid-row-gap: 15px;
+    }
+    
+    main > a {
+        background: linear-gradient(90deg, rgb(250, 246, 246), rgb(255, 255, 255), rgb(250, 246, 246));
+        color: black;
+        border-radius: 5px;
+        height: 220px;
+        width: 80%;
+        padding: 5px;
+        margin: auto;
+        justify-self: center;
+        box-shadow: 0px 2px 4px 1px gray;
+        text-shadow: 1px 1px 2px white;
+        transition: 1s;
+    }
+    
+    main img {
+        height: 220px;
+        width: auto;
     }
 }

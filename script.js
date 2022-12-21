@@ -1,9 +1,17 @@
-navLink = document.getElementById('navlink')
-quill = document.getElementById('quill')
+let logoSelectorNav = document.querySelector("#logo")
+let logoSelectorFoot = document.querySelector(".foot")
 
-if (window.matchMedia("(max-width: 1000px)").matches) {
-    navLink.classList.add('d-none');
-    quill.classList.add('d-show')
-  } else {
-    
-  }
+logoSelectorNav.addEventListener("mouseover", function () {
+  logoSelectorNav.setAttribute("style", `cursor: pointer;`)
+})
+logoSelectorFoot.addEventListener("mouseover", function () {
+  logoSelectorFoot.setAttribute("style", `cursor: pointer;`)
+})
+
+logoSelectorNav.addEventListener("click", function () {
+  document.location.href = "index.html"
+})
+
+logoSelectorFoot.addEventListener("click", function () {
+  document.location.href = "index.html"
+})

@@ -95,6 +95,7 @@ main > a {
     height: 150px;
     width: 80%;
     padding: 5px;
+    margin: auto;
     justify-self: center;
     opacity: 0.8;
     box-shadow: 0px 2px 4px 1px gray;
@@ -354,12 +355,6 @@ footer > p {
         font-size: 30px;
         gap: 20px;
     }
-    
-    .nav {
-        height: 8vh;
-        overflow: hidden;
-        transition: height 0.2s ease;
-    }
 
     h2 {
         font-size: 25px;
@@ -380,22 +375,22 @@ footer > p {
     }
 
     footer p {
-        font-size: 10px;
+        font-size: 5px;
     }
     
     .foot {
-        height: 20px;
+        height: 15px;
         margin-left: 1%;
     }
     
     .footlink {
         display: flex;
         gap: 2%;
-        margin-right: 10%;
+        margin-right: 15%;
     }
     
     .foot-photo {
-        height: 30px;
+        height: 40px;
         transition: 1s;
     }
 }

@@ -263,23 +263,22 @@ footer > p {
     }
 
     footer p {
-        font-size: 10px;
+        font-size: 5px;
     }
     
     .foot {
-        height: 20px;
+        height: 15px;
         margin-left: 1%;
     }
     
     .footlink {
         display: flex;
         gap: 2%;
-        margin-right: 10%;
+        margin-right: 15%;
     }
     
     .foot-photo {
-        height: 30px;
+        height: 40px;
         transition: 1s;
     }
-
 }

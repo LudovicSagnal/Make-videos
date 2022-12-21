@@ -239,11 +239,11 @@ footer > p {
     font-size: 58px;
 }
 
-.nav {
+/* .nav {
     height: 8vh;
     overflow: hidden;
     transition: height 0.2s ease;
-}
+} */
 
 form {
   display: flex;
